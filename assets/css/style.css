@@ -1,0 +1,219 @@
+@font-face {
+    font-family: "Freigeist-md";
+    src: url("../fonts/Fontspring-DEMO-freigeist-medium.otf");
+}
+@font-face {
+    font-family: "Freigeist-lt";
+    src: url("../fonts/Fontspring-DEMO-freigeist-light.otf");
+}
+@font-face {
+    font-family: "Freigeist-bd";
+    src: url("../fonts/Fontspring-DEMO-freigeist-bold.otf");
+}
+
+html{
+    scroll-snap-type: y mandatory;
+}
+section{
+    scroll-snap-align: start;
+    min-height: 100vh !important;
+}
+h1{
+    font-family: "Freigeist-md";
+}
+.goal{
+    position: relative;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/goal.jpg');
+    background-size: cover;
+}
+.list{
+    margin-top: 20px;
+    color: white;
+    font-size: 24px;
+}
+
+.timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem
+}
+
+@media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #343a40;
+        width: 3.46rem;
+        position: absolute;
+        left: 7.5rem;
+        top: .3125rem
+    }
+    .timeline-steps .timeline-step:not(:first-child):before {
+        content: "";
+        display: block;
+        border-top: .25rem dotted #343a40;
+        width: 3.8125rem;
+        position: absolute;
+        right: 7.5rem;
+        top: .3125rem
+    }
+}
+
+.timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.timeline-steps .timeline-content .inner-circle {
+    border-radius: 1.5rem;
+    height: 1rem;
+    width: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #343a40
+}
+
+.timeline-steps .timeline-content .inner-circle:before {
+    content: "";
+    background-color: #343a40bb;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    min-width: 3rem;
+    border-radius: 6.25rem;
+    opacity: .5;
+    transition: all 0.1s ease-in;
+}
+
+.timeline-step:hover .inner-circle:before{
+    background-color: #343a40;
+    opacity: 1;
+}
+
+.pricing-side{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../images/pricing.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.content > div > span
+{
+    background: #343a40bb;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 20px;
+}
+.contact > div > span{
+    background: white;
+    width: 2.1rem;
+    height: 2.1rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #343a40;
+}
+@media (max-width:600px) {
+    html{
+        scroll-snap-type: none !important;
+    }
+    section{
+        min-height: 100vh !important;
+    }
+    .row.vh-100{
+        height: auto !important;
+    }
+    .logo{
+        height: 70px;
+    }
+    .objective{
+        height: 300px !important;
+    }
+    .objective > div{
+        flex-direction: column !important;
+        justify-content: center !important;
+    }
+    .objective > div > div{
+        width: 100% !important;
+    }
+    .goal{
+        height: 60% !important;
+    }
+    .goal > div > div{
+        width: 100% !important;
+    }
+    .list{
+        font-size: 16px;
+    }
+    .phases, .vh-100{
+        min-height: 100vh !important;
+    }
+    .seo-phases{
+        max-width: 100%;
+        height: auto !important;
+    }
+    .seo-phases:nth-child(1),.seo-phases:nth-child(2){
+        margin-top: 45px;
+        border-right: none !important;
+    }
+    .pricing{
+        flex-direction: column !important;
+    }
+    .pricing  .pricing-q{
+        height: 75% !important;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pricing .table-responsive{
+        width: 75% !important;
+    }
+    .modal .table-responsive{
+        width: 100% !important;
+    }
+    .pricing .table-responsive table{
+        width: 100% !important;
+    }
+    .pricing h1{
+        margin: 25px 0;
+    }
+    .pricing-side{
+        height: 25% !important;
+    }
+    .timeline-content{
+        width: 13rem !important;
+    }
+    .content > div{
+        padding-top: 20px;
+    }
+    .content p, .heading p{
+        width: 100% !important;
+    }
+    .heading{
+        margin-top: 25px;
+    }
+    .heading p{
+        margin-top: 10px !important;
+    }
+    h1{
+        font-size: 2rem !important;
+    }
+    h2{
+        font-size: 1rem !important;
+    }
+}

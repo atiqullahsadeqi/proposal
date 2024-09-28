@@ -1,0 +1,64 @@
+html {
+  background: #e2ebef;
+}
+
+body {
+  max-width: 1200px;
+  padding: 20px;
+  margin: 0 auto;
+  line-height: 1.2;
+  font-weight: 300;
+  font-family: Roboto Slab, sans-serif;
+}
+
+.title {
+  font-size: calc(1.525rem + 3.3vw);
+  min-width: 0vw;
+  margin: 0 0 0.5em;
+  font-weight: 600;
+}
+.disable-rfs .title, .title.disable-rfs {
+  font-size: 4rem;
+}
+@media (min-width: 1200px) {
+  .title {
+    font-size: 4rem;
+  }
+}
+
+.article {
+  background: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+  padding: 20px 25px;
+  border-radius: 0.5rem;
+}
+.article:not(:first-of-type) {
+  margin-top: 2rem;
+}
+.article__title {
+  font-size: calc(1.29375rem + 0.525vw);
+  min-width: 0vw;
+  margin: 0;
+  font-weight: 600;
+}
+.disable-rfs .article__title, .article__title.disable-rfs {
+  font-size: 1.6875rem;
+}
+@media (min-width: 1200px) {
+  .article__title {
+    font-size: 1.6875rem;
+  }
+}
+.article__date {
+  padding-top: 0.25em;
+  font-size: 0.75rem;
+  opacity: 0.75;
+  font-style: italic;
+  margin: 0;
+}
+.article__content {
+  padding-top: 0.75em;
+  font-size: 1rem;
+  margin: 0;
+  line-height: 1.4;
+}/*# sourceMappingURL=main.css.map */
